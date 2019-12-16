@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FAF8F8"
+    android:backgroundTint="@color/colorButtonTextEnabled">
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="38dp"
+        android:layout_height="93dp"
+        android:layout_weight="0.2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="47dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="0.2"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/ib_addnew"
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:background="#00ffffff"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/sumar"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/ib_remove"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+</LinearLayout>
+
